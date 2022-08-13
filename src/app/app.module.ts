@@ -9,18 +9,18 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NotFoundComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    SharedModule,
-    LandingpageModule,
-    TooltipModule.forRoot()
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+   declarations: [
+      AppComponent,
+      NotFoundComponent
+   ],
+   imports: [
+      BrowserModule,
+      AppRoutingModule,
+      SharedModule,
+      LandingpageModule,
+      TooltipModule.forRoot()
+   ],
+   providers: [],
+   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+   selector: 'app-home',
+   templateUrl: './home.component.html',
+   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+   //eslint-disable-next-line @typescript-eslint/no-empty-function
+   constructor() { }
 
-  ngOnInit(): void {
-  }
+   //eslint-disable-next-line @typescript-eslint/no-empty-function
+   ngOnInit(): void {
+   }
 
 }
