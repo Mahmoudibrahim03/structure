@@ -1,0 +1,29 @@
+.navbar {
+   img {
+      max-width: 3%;
+      min-width: 40px;
+   }
+
+   text-transform: uppercase;
+
+   .navbar-collapse {
+      .navbar-nav {
+         margin-left: -8%;
+
+         .nav-item {
+            cursor: pointer;
+            transition: all 0.23s ease-in-out;
+            margin-right: 10px;
+
+            &:last-child {
+               margin-right: 0;
+            }
+
+            &:hover {
+               border-bottom: 2px solid var(--bs-navbar-color);
+               transition: all 0.23s ease-in-out;
+            }
+         }
+      }
+   }
+}

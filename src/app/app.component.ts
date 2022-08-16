@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'architect';
+  constructor() {
+    // setTheme('bs5');
+  }
 }
