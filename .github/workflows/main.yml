@@ -24,7 +24,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
+      # print current path
+      - name: current path printer
+        run: pwd
+      # install all dependancies 
+      - name: install npm dependancies 
+        run: npm install
       # Runs a single command using the runners shell
       - name: build production version
         run: ng build --prod
