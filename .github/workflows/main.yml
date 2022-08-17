@@ -30,7 +30,7 @@ jobs:
         uses: actions/setup-node@v3.4.1
         
       - name: install angular globally. 
-        uses: npm install -g @angular/cli
+        run: npm install -g @angular/cli
         
       - name : install dependancy
         run : npm install 
