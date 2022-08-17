@@ -27,6 +27,9 @@ jobs:
       # print current path
       - name: current path printer
         run: pwd
+      # install angular globally
+      - name: install angular gobally
+        run: npm install -g @angular/cli
       # install all dependancies 
       - name: install npm dependancies 
         run: npm install
