@@ -1,0 +1,20 @@
+<div class="container">
+  <h1 class="text-uppercase text-center text-decoration-underline">Umbrella  Academy  Heros</h1>
+
+  <div class="row actors mb-5" *ngFor="let actor of actors">
+    <div class="col-3 actorsPhotos">
+      <img class="w-100" [src]="actor.photo" alt="">
+    </div>
+    <div class="col-9 actorsInfo d-flex flex-column justify-content-center">
+      <h3 class="name fw-bolder">{{actor.name}}</h3>
+      <p class="description">{{actor.description}}</p>
+      <div class="socialMedia d-flex">
+        <div class="d-flex mx-2" *ngFor="let link of actor.socialMedia| keyvalue">
+          <a *ngIf="link.key == 'facebook'" href="{{link.value}}"><i class="fa fa-facebook-official"></i> </a>
+          <a *ngIf="link.key == 'twitter'" href="{{link.value}}"><i class="fa fa-twitter"></i> </a>
+          <a *ngIf="link.key == 'instagram'" href="{{link.value}}"><i class="fa fa-instagram"></i> </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

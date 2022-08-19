@@ -1,0 +1,5 @@
+@import '../../../../../mixes.scss';
+
+img {
+   @include grayEffect;
+}
