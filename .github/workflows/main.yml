@@ -38,11 +38,20 @@ jobs:
         
       - name: build deployment version 
         run: ng build --prod
-        
+      
+      - name: GitHub Push
+        # You may pin to the exact commit or the version.
+        # uses: ad-m/github-push-action@40bf560936a8022e68a3c00e7d2abefaf01305a6
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          branch: deployment
+          github_token: $\{{ secrets.GITHUB_TOKEN }}
+          
       - name: Deploy to GitHub Pages
         # You may pin to the exact commit or the version.
         # uses: JamesIves/github-pages-deploy-action@13046b614c663b56cba4dda3f30b9736a748b80d
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
+          github_token: $\{{ secrets.GITHUB_TOKEN }}
           branch: deployment
           folder: architect
