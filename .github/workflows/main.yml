@@ -36,6 +36,9 @@ jobs:
       - name: install npm dependancies 
         run: npm i
         
+      - name: build 
+        run: ng build
+        
       - name: build deployment version 
         run: ng build --prod
           
