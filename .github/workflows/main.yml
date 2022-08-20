@@ -31,7 +31,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: install dependancies 
-        run: npm i @angular/core
+        run: npm install -g @angular/cli
         
       - name: install npm dependancies 
         run: npm i
